@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+.active-purple-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #3c0069;
+}
+.active-purple-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #50008d;
+}
+.active-purple-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #6400b0;
+}
+.active-purple-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #7800d3;
+}
+.active-purple-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #8c00f6;
+}
+.active-purple {
+	box-shadow: 0 0 0 0.015rem #9c1aff;
+}
+.active-purple-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #a837ff;
+}
+.active-purple-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #b553ff;
+}
+.active-purple-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #c170ff;
+}
+.active-purple-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #ce8dff;
+}
+.active-purple-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #daa9ff;
+}
+.active-purple-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #e6c6ff;
+}
+.active-purple-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #f3e2ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active-blue-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #003960;
+}
+.active-blue-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #004d80;
+}
+.active-blue-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #00609f;
+}
+.active-blue-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #0073bf;
+}
+.active-blue-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #0086df;
+}
+.active-blue {
+	box-shadow: 0 0 0 0.015rem #0099ff;
+}
+.active-blue-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #20a6ff;
+}
+.active-blue-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #40b3ff;
+}
+.active-blue-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #60bfff;
+}
+.active-blue-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #80ccff;
+}
+.active-blue-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #9fd9ff;
+}
+.active-blue-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #bfe6ff;
+}
+.active-blue-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #dff2ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active-green-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #0d4d1f;
+}
+.active-green-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #116629;
+}
+.active-green-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #158033;
+}
+.active-green-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #19993d;
+}
+.active-green-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #1eb347;
+}
+.active-green {
+	box-shadow: 0 0 0 0.015rem #22cc52;
+}
+.active-green-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #33dd63;
+}
+.active-green-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #50e279;
+}
+.active-green-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #6de78f;
+}
+.active-green-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #8aeca6;
+}
+.active-green-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #a8f0bc;
+}
+.active-green-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #c5f5d2;
+}
+.active-green-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #e2fae9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active-yellow-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #604d00;
+}
+.active-yellow-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #806600;
+}
+.active-yellow-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #9f8000;
+}
+.active-yellow-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #bf9900;
+}
+.active-yellow-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #dfb300;
+}
+.active-yellow {
+	box-shadow: 0 0 0 0.015rem #ffcc00;
+}
+.active-yellow-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #ffd220;
+}
+.active-yellow-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #ffd940;
+}
+.active-yellow-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #ffdf60;
+}
+.active-yellow-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #ffe680;
+}
+.active-yellow-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #ffec9f;
+}
+.active-yellow-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #fff2bf;
+}
+.active-yellow-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #fff9df;
 }
 
-.App-link {
-  color: #61dafb;
+.active-orange-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #663101;
+}
+.active-orange-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #884201;
+}
+.active-orange-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #aa5201;
+}
+.active-orange-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #cc6201;
+}
+.active-orange-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #ee7301;
+}
+.active-orange {
+	box-shadow: 0 0 0 0.015rem #fe8413;
+}
+.active-orange-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #fe9331;
+}
+.active-orange-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #fea34e;
+}
+.active-orange-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #feb26c;
+}
+.active-orange-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #fec189;
+}
+.active-orange-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #ffd1a7;
+}
+.active-orange-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #ffe0c4;
+}
+.active-orange-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #fff0e2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-red-darken-5:focus {
+	box-shadow: 0 0 0 0.015rem #600017;
+}
+.active-red-darken-4:focus {
+	box-shadow: 0 0 0 0.015rem #80001f;
+}
+.active-red-darken-3:focus {
+	box-shadow: 0 0 0 0.015rem #9f0026;
+}
+.active-red-darken-2:focus {
+	box-shadow: 0 0 0 0.015rem #bf002e;
+}
+.active-red-darken-1:focus {
+	box-shadow: 0 0 0 0.015rem #df0036;
+}
+.active-red {
+	box-shadow: 0 0 0 0.015rem #ff003d;
+}
+.active-red-lighten-1:focus {
+	box-shadow: 0 0 0 0.015rem #ff2055;
+}
+.active-red-lighten-2:focus {
+	box-shadow: 0 0 0 0.015rem #ff406e;
+}
+.active-red-lighten-3:focus {
+	box-shadow: 0 0 0 0.015rem #ff6086;
+}
+.active-red-lighten-4:focus {
+	box-shadow: 0 0 0 0.015rem #ff809e;
+}
+.active-red-lighten-5:focus {
+	box-shadow: 0 0 0 0.015rem #ff9fb6;
+}
+.active-red-lighten-6:focus {
+	box-shadow: 0 0 0 0.015rem #ffbfcf;
+}
+.active-red-lighten-7:focus {
+	box-shadow: 0 0 0 0.015rem #ffdfe7;
 }

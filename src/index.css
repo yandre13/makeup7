@@ -1,13 +1,1049 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*Utils*/
+.rounded {
+	border-radius: 1rem;
+}
+.rounded-sm {
+	border-radius: 0.5rem;
+}
+.rounded-lg {
+	border-radius: 1.5rem;
+}
+.rounded-xl {
+	border-radius: 2rem;
+}
+.text-white {
+	color: #fff;
+}
+.text-black {
+	color: #111;
+}
+.bg-transparent {
+	background-color: transparent;
+}
+.w-100 {
+	display: block;
+	width: 100%;
+}
+
+/*Alert*/
+.alert {
+	padding: 0.8rem 1.2rem;
+	width: 100%;
+}
+/*Button*/
+button:focus {
+	outline: none;
+}
+button::-moz-focus-inner {
+	border: 0;
+}
+.button-sm {
+	border: none;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all ease 0.3s;
+	outline: red;
+}
+.button {
+	border: none;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	padding: 0.5rem 0.75rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+.button-lg {
+	border: none;
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0.75rem 1rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+.active:focus {
+	box-shadow: 0 0 0 0.15rem #60bfff;
+}
+
+/*Bg colors*/
+.bg-purple-darken-5 {
+	background-color: #3c0069;
+}
+.bg-purple-darken-4 {
+	background-color: #50008d;
+}
+.bg-purple-darken-3 {
+	background-color: #6400b0;
+}
+.bg-purple-darken-2 {
+	background-color: #7800d3;
+}
+.bg-purple-darken-1 {
+	background-color: #8c00f6;
+}
+.bg-purple {
+	background-color: #9c1aff;
+}
+.bg-purple-lighten-1 {
+	background-color: #a837ff;
+}
+.bg-purple-lighten-2 {
+	background-color: #b553ff;
+}
+.bg-purple-lighten-3 {
+	background-color: #c170ff;
+}
+.bg-purple-lighten-4 {
+	background-color: #ce8dff;
+}
+.bg-purple-lighten-5 {
+	background-color: #daa9ff;
+}
+.bg-purple-lighten-6 {
+	background-color: #e6c6ff;
+}
+.bg-purple-lighten-7 {
+	background-color: #f3e2ff;
+}
+
+.bg-blue-darken-5 {
+	background-color: #003960;
+}
+.bg-blue-darken-4 {
+	background-color: #004d80;
+}
+.bg-blue-darken-3 {
+	background-color: #00609f;
+}
+.bg-blue-darken-2 {
+	background-color: #0073bf;
+}
+.bg-blue-darken-1 {
+	background-color: #0086df;
+}
+.bg-blue {
+	background-color: #0099ff;
+}
+.bg-blue-lighten-1 {
+	background-color: #20a6ff;
+}
+.bg-blue-lighten-2 {
+	background-color: #40b3ff;
+}
+.bg-blue-lighten-3 {
+	background-color: #60bfff;
+}
+.bg-blue-lighten-4 {
+	background-color: #80ccff;
+}
+.bg-blue-lighten-5 {
+	background-color: #9fd9ff;
+}
+.bg-blue-lighten-6 {
+	background-color: #bfe6ff;
+}
+.bg-blue-lighten-7 {
+	background-color: #dff2ff;
+}
+
+.bg-green-darken-5 {
+	background-color: #0d4d1f;
+}
+.bg-green-darken-4 {
+	background-color: #116629;
+}
+.bg-green-darken-3 {
+	background-color: #158033;
+}
+.bg-green-darken-2 {
+	background-color: #19993d;
+}
+.bg-green-darken-1 {
+	background-color: #1eb347;
+}
+.bg-green {
+	background-color: #22cc52;
+}
+.bg-green-lighten-1 {
+	background-color: #33dd63;
+}
+.bg-green-lighten-2 {
+	background-color: #50e279;
+}
+.bg-green-lighten-3 {
+	background-color: #6de78f;
+}
+.bg-green-lighten-4 {
+	background-color: #8aeca6;
+}
+.bg-green-lighten-5 {
+	background-color: #a8f0bc;
+}
+.bg-green-lighten-6 {
+	background-color: #c5f5d2;
+}
+.bg-green-lighten-7 {
+	background-color: #e2fae9;
+}
+
+.bg-yellow-darken-5 {
+	background-color: #604d00;
+}
+.bg-yellow-darken-4 {
+	background-color: #806600;
+}
+.bg-yellow-darken-3 {
+	background-color: #9f8000;
+}
+.bg-yellow-darken-2 {
+	background-color: #bf9900;
+}
+.bg-yellow-darken-1 {
+	background-color: #dfb300;
+}
+.bg-yellow {
+	background-color: #ffcc00;
+}
+.bg-yellow-lighten-1 {
+	background-color: #ffd220;
+}
+.bg-yellow-lighten-2 {
+	background-color: #ffd940;
+}
+.bg-yellow-lighten-3 {
+	background-color: #ffdf60;
+}
+.bg-yellow-lighten-4 {
+	background-color: #ffe680;
+}
+.bg-yellow-lighten-5 {
+	background-color: #ffec9f;
+}
+.bg-yellow-lighten-6 {
+	background-color: #fff2bf;
+}
+.bg-yellow-lighten-7 {
+	background-color: #fff9df;
+}
+
+.bg-orange-darken-5 {
+	background-color: #663101;
+}
+.bg-orange-darken-4 {
+	background-color: #884201;
+}
+.bg-orange-darken-3 {
+	background-color: #aa5201;
+}
+.bg-orange-darken-2 {
+	background-color: #cc6201;
+}
+.bg-orange-darken-1 {
+	background-color: #ee7301;
+}
+.bg-orange {
+	background-color: #fe8413;
+}
+.bg-orange-lighten-1 {
+	background-color: #fe9331;
+}
+.bg-orange-lighten-2 {
+	background-color: #fea34e;
+}
+.bg-orange-lighten-3 {
+	background-color: #feb26c;
+}
+.bg-orange-lighten-4 {
+	background-color: #fec189;
+}
+.bg-orange-lighten-5 {
+	background-color: #ffd1a7;
+}
+.bg-orange-lighten-6 {
+	background-color: #ffe0c4;
+}
+.bg-orange-lighten-7 {
+	background-color: #fff0e2;
+}
+
+.bg-red-darken-5 {
+	background-color: #600017;
+}
+.bg-red-darken-4 {
+	background-color: #80001f;
+}
+.bg-red-darken-3 {
+	background-color: #9f0026;
+}
+.bg-red-darken-2 {
+	background-color: #bf002e;
+}
+.bg-red-darken-1 {
+	background-color: #df0036;
+}
+.bg-red {
+	background-color: #ff003d;
+}
+.bg-red-lighten-1 {
+	background-color: #ff2055;
+}
+.bg-red-lighten-2 {
+	background-color: #ff406e;
+}
+.bg-red-lighten-3 {
+	background-color: #ff6086;
+}
+.bg-red-lighten-4 {
+	background-color: #ff809e;
+}
+.bg-red-lighten-5 {
+	background-color: #ff9fb6;
+}
+.bg-red-lighten-6 {
+	background-color: #ffbfcf;
+}
+.bg-red-lighten-7 {
+	background-color: #ffdfe7;
+}
+
+/*Text colors*/
+.text-purple-darken-5 {
+	color: #3c0069;
+}
+.text-purple-darken-4 {
+	color: #50008d;
+}
+.text-purple-darken-3 {
+	color: #6400b0;
+}
+.text-purple-darken-2 {
+	color: #7800d3;
+}
+.text-purple-darken-1 {
+	color: #8c00f6;
+}
+.text-purple {
+	color: #9c1aff;
+}
+.text-purple-lighten-1 {
+	color: #a837ff;
+}
+.text-purple-lighten-2 {
+	color: #b553ff;
+}
+.text-purple-lighten-3 {
+	color: #c170ff;
+}
+.text-purple-lighten-4 {
+	color: #ce8dff;
+}
+.text-purple-lighten-5 {
+	color: #daa9ff;
+}
+.text-purple-lighten-6 {
+	color: #e6c6ff;
+}
+.text-purple-lighten-7 {
+	color: #f3e2ff;
+}
+
+.text-blue-darken-5 {
+	color: #003960;
+}
+.text-blue-darken-4 {
+	color: #004d80;
+}
+.text-blue-darken-3 {
+	color: #00609f;
+}
+.text-blue-darken-2 {
+	color: #0073bf;
+}
+.text-blue-darken-1 {
+	color: #0086df;
+}
+.text-blue {
+	color: #0099ff;
+}
+.text-blue-lighten-1 {
+	color: #20a6ff;
+}
+.text-blue-lighten-2 {
+	color: #40b3ff;
+}
+.text-blue-lighten-3 {
+	color: #60bfff;
+}
+.text-blue-lighten-4 {
+	color: #80ccff;
+}
+.text-blue-lighten-5 {
+	color: #9fd9ff;
+}
+.text-blue-lighten-6 {
+	color: #bfe6ff;
+}
+.text-blue-lighten-7 {
+	color: #dff2ff;
+}
+
+.text-green-darken-5 {
+	color: #0d4d1f;
+}
+.text-green-darken-4 {
+	color: #116629;
+}
+.text-green-darken-3 {
+	color: #158033;
+}
+.text-green-darken-2 {
+	color: #19993d;
+}
+.text-green-darken-1 {
+	color: #1eb347;
+}
+.text-green {
+	color: #22cc52;
+}
+.text-green-lighten-1 {
+	color: #33dd63;
+}
+.text-green-lighten-2 {
+	color: #50e279;
+}
+.text-green-lighten-3 {
+	color: #6de78f;
+}
+.text-green-lighten-4 {
+	color: #8aeca6;
+}
+.text-green-lighten-5 {
+	color: #a8f0bc;
+}
+.text-green-lighten-6 {
+	color: #c5f5d2;
+}
+.text-green-lighten-7 {
+	color: #e2fae9;
+}
+
+.text-yellow-darken-5 {
+	color: #604d00;
+}
+.text-yellow-darken-4 {
+	color: #806600;
+}
+.text-yellow-darken-3 {
+	color: #9f8000;
+}
+.text-yellow-darken-2 {
+	color: #bf9900;
+}
+.text-yellow-darken-1 {
+	color: #dfb300;
+}
+.text-yellow {
+	color: #ffcc00;
+}
+.text-yellow-lighten-1 {
+	color: #ffd220;
+}
+.text-yellow-lighten-2 {
+	color: #ffd940;
+}
+.text-yellow-lighten-3 {
+	color: #ffdf60;
+}
+.text-yellow-lighten-4 {
+	color: #ffe680;
+}
+.text-yellow-lighten-5 {
+	color: #ffec9f;
+}
+.text-yellow-lighten-6 {
+	color: #fff2bf;
+}
+.text-yellow-lighten-7 {
+	color: #fff9df;
+}
+
+.text-orange-darken-5 {
+	color: #663101;
+}
+.text-orange-darken-4 {
+	color: #884201;
+}
+.text-orange-darken-3 {
+	color: #aa5201;
+}
+.text-orange-darken-2 {
+	color: #cc6201;
+}
+.text-orange-darken-1 {
+	color: #ee7301;
+}
+.text-orange {
+	color: #fe8413;
+}
+.text-orange-lighten-1 {
+	color: #fe9331;
+}
+.text-orange-lighten-2 {
+	color: #fea34e;
+}
+.text-orange-lighten-3 {
+	color: #feb26c;
+}
+.text-orange-lighten-4 {
+	color: #fec189;
+}
+.text-orange-lighten-5 {
+	color: #ffd1a7;
+}
+.text-orange-lighten-6 {
+	color: #ffe0c4;
+}
+.text-orange-lighten-7 {
+	color: #fff0e2;
+}
+
+.text-red-darken-5 {
+	color: #600017;
+}
+.text-red-darken-4 {
+	color: #80001f;
+}
+.text-red-darken-3 {
+	color: #9f0026;
+}
+.text-red-darken-2 {
+	color: #bf002e;
+}
+.text-red-darken-1 {
+	color: #df0036;
+}
+.text-red {
+	color: #ff003d;
+}
+.text-red-lighten-1 {
+	color: #ff2055;
+}
+.text-red-lighten-2 {
+	color: #ff406e;
+}
+.text-red-lighten-3 {
+	color: #ff6086;
+}
+.text-red-lighten-4 {
+	color: #ff809e;
+}
+.text-red-lighten-5 {
+	color: #ff9fb6;
+}
+.text-red-lighten-6 {
+	color: #ffbfcf;
+}
+.text-red-lighten-7 {
+	color: #ffdfe7;
+}
+/*border colors*/
+.border-purple-darken-5 {
+	border: 1px solid #3c0069;
+}
+.border-purple-darken-4 {
+	border: 1px solid #50008d;
+}
+.border-purple-darken-3 {
+	border: 1px solid #6400b0;
+}
+.border-purple-darken-2 {
+	border: 1px solid #7800d3;
+}
+.border-purple-darken-1 {
+	border: 1px solid #8c00f6;
+}
+.border-purple {
+	border: 1px solid #9c1aff;
+}
+.border-purple-lighten-1 {
+	border: 1px solid #a837ff;
+}
+.border-purple-lighten-2 {
+	border: 1px solid #b553ff;
+}
+.border-purple-lighten-3 {
+	border: 1px solid #c170ff;
+}
+.border-purple-lighten-4 {
+	border: 1px solid #ce8dff;
+}
+.border-purple-lighten-5 {
+	border: 1px solid #daa9ff;
+}
+.border-purple-lighten-6 {
+	border: 1px solid #e6c6ff;
+}
+.border-purple-lighten-7 {
+	border: 1px solid #f3e2ff;
+}
+
+.border-blue-darken-5 {
+	border: 1px solid #003960;
+}
+.border-blue-darken-4 {
+	border: 1px solid #004d80;
+}
+.border-blue-darken-3 {
+	border: 1px solid #00609f;
+}
+.border-blue-darken-2 {
+	border: 1px solid #0073bf;
+}
+.border-blue-darken-1 {
+	border: 1px solid #0086df;
+}
+.border-blue {
+	border: 1px solid #0099ff;
+}
+.border-blue-lighten-1 {
+	border: 1px solid #20a6ff;
+}
+.border-blue-lighten-2 {
+	border: 1px solid #40b3ff;
+}
+.border-blue-lighten-3 {
+	border: 1px solid #60bfff;
+}
+.border-blue-lighten-4 {
+	border: 1px solid #80ccff;
+}
+.border-blue-lighten-5 {
+	border: 1px solid #9fd9ff;
+}
+.border-blue-lighten-6 {
+	border: 1px solid #bfe6ff;
+}
+.border-blue-lighten-7 {
+	border: 1px solid #dff2ff;
+}
+
+.border-green-darken-5 {
+	border: 1px solid #0d4d1f;
+}
+.border-green-darken-4 {
+	border: 1px solid #116629;
+}
+.border-green-darken-3 {
+	border: 1px solid #158033;
+}
+.border-green-darken-2 {
+	border: 1px solid #19993d;
+}
+.border-green-darken-1 {
+	border: 1px solid #1eb347;
+}
+.border-green {
+	border: 1px solid #22cc52;
+}
+.border-green-lighten-1 {
+	border: 1px solid #33dd63;
+}
+.border-green-lighten-2 {
+	border: 1px solid #50e279;
+}
+.border-green-lighten-3 {
+	border: 1px solid #6de78f;
+}
+.border-green-lighten-4 {
+	border: 1px solid #8aeca6;
+}
+.border-green-lighten-5 {
+	border: 1px solid #a8f0bc;
+}
+.border-green-lighten-6 {
+	border: 1px solid #c5f5d2;
+}
+.border-green-lighten-7 {
+	border: 1px solid #e2fae9;
+}
+
+.border-yellow-darken-5 {
+	border: 1px solid #604d00;
+}
+.border-yellow-darken-4 {
+	border: 1px solid #806600;
+}
+.border-yellow-darken-3 {
+	border: 1px solid #9f8000;
+}
+.border-yellow-darken-2 {
+	border: 1px solid #bf9900;
+}
+.border-yellow-darken-1 {
+	border: 1px solid #dfb300;
+}
+.border-yellow {
+	border: 1px solid #ffcc00;
+}
+.border-yellow-lighten-1 {
+	border: 1px solid #ffd220;
+}
+.border-yellow-lighten-2 {
+	border: 1px solid #ffd940;
+}
+.border-yellow-lighten-3 {
+	border: 1px solid #ffdf60;
+}
+.border-yellow-lighten-4 {
+	border: 1px solid #ffe680;
+}
+.border-yellow-lighten-5 {
+	border: 1px solid #ffec9f;
+}
+.border-yellow-lighten-6 {
+	border: 1px solid #fff2bf;
+}
+.border-yellow-lighten-7 {
+	border: 1px solid #fff9df;
+}
+
+.border-orange-darken-5 {
+	border: 1px solid #663101;
+}
+.border-orange-darken-4 {
+	border: 1px solid #884201;
+}
+.border-orange-darken-3 {
+	border: 1px solid #aa5201;
+}
+.border-orange-darken-2 {
+	border: 1px solid #cc6201;
+}
+.border-orange-darken-1 {
+	border: 1px solid #ee7301;
+}
+.border-orange {
+	border: 1px solid #fe8413;
+}
+.border-orange-lighten-1 {
+	border: 1px solid #fe9331;
+}
+.border-orange-lighten-2 {
+	border: 1px solid #fea34e;
+}
+.border-orange-lighten-3 {
+	border: 1px solid #feb26c;
+}
+.border-orange-lighten-4 {
+	border: 1px solid #fec189;
+}
+.border-orange-lighten-5 {
+	border: 1px solid #ffd1a7;
+}
+.border-orange-lighten-6 {
+	border: 1px solid #ffe0c4;
+}
+.border-orange-lighten-7 {
+	border: 1px solid #fff0e2;
+}
+
+.border-red-darken-5 {
+	border: 1px solid #600017;
+}
+.border-red-darken-4 {
+	border: 1px solid #80001f;
+}
+.border-red-darken-3 {
+	border: 1px solid #9f0026;
+}
+.border-red-darken-2 {
+	border: 1px solid #bf002e;
+}
+.border-red-darken-1 {
+	border: 1px solid #df0036;
+}
+.border-red {
+	border: 1px solid #ff003d;
+}
+.border-red-lighten-1 {
+	border: 1px solid #ff2055;
+}
+.border-red-lighten-2 {
+	border: 1px solid #ff406e;
+}
+.border-red-lighten-3 {
+	border: 1px solid #ff6086;
+}
+.border-red-lighten-4 {
+	border: 1px solid #ff809e;
+}
+.border-red-lighten-5 {
+	border: 1px solid #ff9fb6;
+}
+.border-red-lighten-6 {
+	border: 1px solid #ffbfcf;
+}
+.border-red-lighten-7 {
+	border: 1px solid #ffdfe7;
+}
+
+/*Active colors*/
+.active-purple-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #3c0069;
+}
+.active-purple-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #50008d;
+}
+.active-purple-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #6400b0;
+}
+.active-purple-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #7800d3;
+}
+.active-purple-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #8c00f6;
+}
+.active-purple:active {
+	box-shadow: 0 0 0 0.15rem #9c1aff;
+}
+.active-purple-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #a837ff;
+}
+.active-purple-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #b553ff;
+}
+.active-purple-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #c170ff;
+}
+.active-purple-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #ce8dff;
+}
+.active-purple-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #daa9ff;
+}
+.active-purple-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #e6c6ff;
+}
+.active-purple-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #f3e2ff;
+}
+
+.active-blue-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #003960;
+}
+.active-blue-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #004d80;
+}
+.active-blue-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #00609f;
+}
+.active-blue-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #0073bf;
+}
+.active-blue-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #0086df;
+}
+.active-blue:active {
+	box-shadow: 0 0 0 0.15rem #0099ff;
+}
+.active-blue-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #20a6ff;
+}
+.active-blue-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #40b3ff;
+}
+.active-blue-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #60bfff;
+}
+.active-blue-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #80ccff;
+}
+.active-blue-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #9fd9ff;
+}
+.active-blue-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #bfe6ff;
+}
+.active-blue-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #dff2ff;
+}
+
+.active-green-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #0d4d1f;
+}
+.active-green-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #116629;
+}
+.active-green-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #158033;
+}
+.active-green-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #19993d;
+}
+.active-green-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #1eb347;
+}
+.active-green:active {
+	box-shadow: 0 0 0 0.15rem #22cc52;
+}
+.active-green-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #33dd63;
+}
+.active-green-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #50e279;
+}
+.active-green-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #6de78f;
+}
+.active-green-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #8aeca6;
+}
+.active-green-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #a8f0bc;
+}
+.active-green-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #c5f5d2;
+}
+.active-green-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #e2fae9;
+}
+
+.active-yellow-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #604d00;
+}
+.active-yellow-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #806600;
+}
+.active-yellow-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #9f8000;
+}
+.active-yellow-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #bf9900;
+}
+.active-yellow-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #dfb300;
+}
+.active-yellow:active {
+	box-shadow: 0 0 0 0.15rem #ffcc00;
+}
+.active-yellow-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #ffd220;
+}
+.active-yellow-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #ffd940;
+}
+.active-yellow-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #ffdf60;
+}
+.active-yellow-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #ffe680;
+}
+.active-yellow-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #ffec9f;
+}
+.active-yellow-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #fff2bf;
+}
+.active-yellow-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #fff9df;
+}
+
+.active-orange-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #663101;
+}
+.active-orange-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #884201;
+}
+.active-orange-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #aa5201;
+}
+.active-orange-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #cc6201;
+}
+.active-orange-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #ee7301;
+}
+.active-orange:active {
+	box-shadow: 0 0 0 0.15rem #fe8413;
+}
+.active-orange-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #fe9331;
+}
+.active-orange-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #fea34e;
+}
+.active-orange-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #feb26c;
+}
+.active-orange-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #fec189;
+}
+.active-orange-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #ffd1a7;
+}
+.active-orange-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #ffe0c4;
+}
+.active-orange-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #fff0e2;
+}
+
+.active-red-darken-5:focus {
+	box-shadow: 0 0 0 0.15rem #600017;
+}
+.active-red-darken-4:focus {
+	box-shadow: 0 0 0 0.15rem #80001f;
+}
+.active-red-darken-3:focus {
+	box-shadow: 0 0 0 0.15rem #9f0026;
+}
+.active-red-darken-2:focus {
+	box-shadow: 0 0 0 0.15rem #bf002e;
+}
+.active-red-darken-1:focus {
+	box-shadow: 0 0 0 0.15rem #df0036;
+}
+.active-red:focus {
+	box-shadow: 0 0 0 0.15rem #ff003d;
+}
+.active-red-lighten-1:focus {
+	box-shadow: 0 0 0 0.15rem #ff2055;
+}
+.active-red-lighten-2:focus {
+	box-shadow: 0 0 0 0.15rem #ff406e;
+}
+.active-red-lighten-3:focus {
+	box-shadow: 0 0 0 0.15rem #ff6086;
+}
+.active-red-lighten-4:focus {
+	box-shadow: 0 0 0 0.15rem #ff809e;
+}
+.active-red-lighten-5:focus {
+	box-shadow: 0 0 0 0.15rem #ff9fb6;
+}
+.active-red-lighten-6:focus {
+	box-shadow: 0 0 0 0.15rem #ffbfcf;
+}
+.active-red-lighten-7:focus {
+	box-shadow: 0 0 0 0.15rem #ffdfe7;
 }
